@@ -1,0 +1,149 @@
+*{
+    font-family: 'Satoshi', sans-serif;
+    color: #1f1f1f;
+    box-sizing: border-box;
+}
+.backBox{
+    background-color: #fd546d;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 30px 10px;
+    height: 100%;
+}
+
+.infoBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moneyBox{
+    display: flex;
+}
+p{
+    margin: 5px;
+}
+.infoAccount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dineroBox{
+    background-color:rgb(218, 218, 218);
+    padding:0 40px;
+    color: #1f1f1f;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    filter: drop-shadow(1px 1px 5px #525252);
+}
+.fondito{
+    background-color: #1f1f1f;
+}
+.opcionesBox{
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+.opBox{
+    background-color: #ffffff;
+    color: #1f1f1f;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid black;
+    transition: ease-in-out 0.2s;
+}
+.opBox:hover {
+    background-color: #E23E57;
+    color: #F0F0F0;
+    transition: ease-in-out 0.2s;
+    transform: translate(10px, -10px);
+    
+}
+.opBox:hover >*{
+    color: #F0F0F0;
+}
+.fa-solid{
+    font-size: 2rem;
+}
+.selectMonedaBox{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.selectMonedaBox >*{
+    background-color: #ffffff;
+    color: #1f1f1f;
+    font-weight: 400;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.home{
+    background-color: #ebebeb;
+    padding-top: 3%;
+    height: 102vh;
+}
+.datosBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trans{
+    font-weight: 400;
+}
+.flecha{
+    font-size: 1.5rem;
+}
+.selectedCur{
+    background-color: #E23E57;
+    color: #F0F0F0;
+}
+.transText{
+    text-align: center;
+    color: #F0F0F0;
+    font-weight: 900;
+}
+.transferBox {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 800;
+    justify-content: space-around;
+    background-color: rgba(218, 218, 218, 0.9);
+    color: black;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    border: 2px solid black;
+}
+@media screen and (min-width: 950px){
+    .transactionsComponent{
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    .backBox{
+        border-radius: 0;
+        padding: 50px 40px;
+        background-color: #fd546d;
+        min-height: 100vh;
+    }
+    .homeInter{
+        position: fixed;
+        left: 50%;
+        top: 0;
+        transform: translate(-20%, 25%);
+    }
+    .hello{
+        display: none;
+    }
+}

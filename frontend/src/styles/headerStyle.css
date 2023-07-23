@@ -1,0 +1,87 @@
+.link{
+    color: aliceblue;
+    text-decoration: none;
+}
+.header{
+    background-color: rgb(180, 180, 180);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 10;
+    transition: right 0.3s ease;
+}
+.visible{
+    right: 0;
+}
+.oculto{
+    right: -50%;
+}
+.menuHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-weight: 400;
+    gap: 10px;
+}
+.logoutBtn{
+    cursor: pointer;
+}
+.fa-x{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: aliceblue;
+    border: 2px solid black;
+    padding:5px 10px;
+    background-color: #E34F89;
+}
+.menuHeaderFirst {
+    background-color: aliceblue;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.linkHome {
+    background-color: #E34F89;
+    padding: 5px 15px;
+    border: 2px solid black;
+}
+@media screen and (min-width: 768px){
+    .header{
+        height: 60px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: rgb(228, 228, 228);
+        filter: drop-shadow(1px 1px 5px #8d8d8d);
+    }
+    .menuHeader{
+        flex-direction: row;
+        width: 90%;
+        margin-top: 0;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .fa-x{
+        display: none;
+    }
+    .linkHome:hover{
+        background-color: rgb(228, 228, 228);
+        color: black;
+        transition: ease-in-out 0.2s;
+    }
+    .menuHeaderFirst, .menuHeaderSecond{
+        display: flex;
+        gap: 30px;
+    }
+    .menuHeaderFirst {
+        background-color: transparent;
+        border: none;
+        padding:0px 20px;
+        margin-bottom: 0px;
+    }
+    
+}

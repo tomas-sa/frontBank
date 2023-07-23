@@ -1,0 +1,126 @@
+body{
+    background-color: #E34F89;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    margin: 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    padding-top: 20%;
+}
+.input{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #d1d1d1;
+}
+.inputLogin{
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 2px solid black;
+    margin-top: 30px;
+}
+.sendInput{
+    width: 50%;
+    padding: 10px 5px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.titleLogin{
+    font-size: 5rem;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-icon {
+    animation: rotate 2s linear infinite;
+}
+.signupBtn {
+    background-color: #FF6876;
+    color: aliceblue;
+    padding: 5px 40px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 30px;
+    font-size: 1rem;
+    border-radius: 15px;
+    
+
+}
+.btnLoginBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.titleLogin{
+    margin: 0;
+    margin-top: 5%;
+    margin-left: 5%;
+    color: #ffffff;
+    text-shadow:
+            -2px 0px 0px black,
+            2px 0px 0px black,
+            0px -2px 0px black,
+            0px 2px 0px black;
+}
+.imgLogin{
+    display: none;
+}
+.titleBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.titleLogin {
+    margin-top: 20%;
+    color: white;
+    font-size: 6rem;
+}
+@media screen and (min-width: 768px){
+    .form{
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+        border-left: 1px solid grey;
+    }
+    .inputLogin{
+        font-size: 1rem;
+        width: 50%;
+    }
+    .sendInput{
+        font-size: 1rem;
+        margin-top: 40px;
+        width: 30%;
+    }
+    
+    .loginBox{
+        display: flex;
+        align-items: center;
+    }
+    .imgLogin {
+        display: initial;
+    }
+    .titleLogin{
+        margin-top: 2%;
+        margin-left: 3%;
+    }
+    body{
+        background-color: #ebebeb;
+    }
+    .titleBox{
+        justify-content: start;
+    }
+}

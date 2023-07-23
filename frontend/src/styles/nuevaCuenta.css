@@ -1,0 +1,104 @@
+.monedaBox{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.monedaBox >*{
+    background-color: #E34F89;
+    color: black;
+    padding: 0 20px;
+    font-weight: 500;
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+.send{
+    padding:3px 40px;
+    margin-top: 60px;
+    font-size: 1.5rem;
+    border: 2px solid black;
+}
+.sendBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    background-color: rgb(246, 240, 255);
+    border: 2px solid black;
+    position: relative;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #4f59e3;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: 0.2s ease;
+}
+.btn:hover::before{
+    top: 10px;
+    left: -10px;
+}
+.selected{
+    background-color: rgb(167, 167, 167);
+}
+.cur{
+    color: black;
+    
+}
+.titleNuevaCaja{
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 30px;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.titleNuevaCaja::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: -10px;
+    background-color: black;
+    z-index: -1;
+}
+.money_jar{
+    display: none;
+}
+@media screen and (min-width: 768px){
+    .mainContainer{
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .monedaBox{
+        display: flex;
+    }
+    .money_jar{
+        display: initial;
+        width: 40%;
+    }
+    .btn{
+        background-color: #E34F89;
+        color: aliceblue;
+    }
+    .cur{
+        color: aliceblue;
+    }
+    .selected {
+        background-color: rgb(19, 19, 19);
+        color: aliceblue;
+    }
+    .titleNuevaCaja{
+        width: 100%;
+    }
+}

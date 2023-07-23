@@ -1,0 +1,154 @@
+.formPrestamo{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 25px;
+}
+.input:focus{
+    outline: none;
+}
+.input::placeholder{
+    color: white;
+}
+.input{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+.submitPrestamo{
+    margin: auto;
+    border: 2px black solid;
+    padding: 5px 20px;
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;    
+}
+.submitPrestamo::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    transition: ease-in-out 0.2s;
+}
+.submitPrestamo:hover::before{
+    transform: translate(-5px, 5px);
+}
+
+.selectCurr{
+    display: flex;
+}
+.selectCurr >*{
+    background-color: #F6F6F6;
+    padding: 5px;
+    border-radius: 5px;
+}
+.disponiblePrestamo{
+    font-size: 2rem;
+}
+.opcionesPrestamo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.opcionesPrestamo>*{
+    color: #F6F6F6;
+    font-size: 2.6rem;
+}
+.imgNotes{
+    display: none;
+}
+.selectCurr>*{
+    cursor: pointer;
+    border: 2px solid black;
+    font-weight: 400;
+}
+.assetsBox >*{
+    color: #F6F6F6;
+    text-align: center;
+}
+.loanTitle{
+    background-color: #F6F6F6;
+    color: #1f1f1f;
+    border: 2px solid black;
+    padding: 5px 20px;
+    font-size: 3rem;
+    margin: 0;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    position: relative;
+    width: 80%;
+    
+    
+}
+.loanTitle::before{
+    content: '';
+    background-color: #1f1f1f;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -5;
+    left: -5px;
+}
+.infoLoan{
+    font-size: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.inputPrestamo::placeholder {
+    font-size: 4rem;
+}
+
+.inputPrestamo {
+    padding: 20px 0px;
+    font-size: 4rem;
+}
+@media screen and (min-width: 768px){
+    .formPrestamo{
+        width: 30%;
+    }
+    .prestamoBox{
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+    }
+    .assetsBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgNotes{
+        display: initial;
+        width: 70%;
+    }
+    .assetsBox>* {
+        color: #1f1f1f;
+    }
+    .opcionesPrestamo>* {
+        color: #1f1f1f;
+        font-size: 2rem;
+    }
+    .input{
+        color: #E23E57;
+    }
+    .inputPrestamo::placeholder{
+        color: #E23E57;
+        font-size: 4rem;
+    }
+    .inputPrestamo{
+        font-size: 4rem;
+    }
+    .infoLoan{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+}
