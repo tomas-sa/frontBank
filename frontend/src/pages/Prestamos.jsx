@@ -52,7 +52,7 @@ function Prestamos() {
     }else{
       setLoadingIcon(false)
       notifySuccess()
-      navigate('/home')
+      navigate('/')
     }
     
   }

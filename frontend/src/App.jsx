@@ -26,7 +26,7 @@ function App() {
             <Bars/>
             <Routes>
               <Route element={ <PrivateRoutes/>}>
-                <Route element={<HomePage/>} path='/home'></Route>
+                <Route element={<HomePage/>} path='/'></Route>
                 <Route element={<CajaAhorros/>} path='/nuevacuenta'></Route>
                 <Route element={<Transferir/>} path='/transferir'></Route>
                 <Route element={<Prestamos/>} path='/prestamos'></Route>

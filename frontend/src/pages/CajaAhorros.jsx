@@ -32,7 +32,7 @@ function CajaAhorros() {
         notifyError()
     }else{
         notifySuccess()
-        navigate('/home')
+        navigate('/')
     }
     
   }

@@ -29,7 +29,7 @@ function Transferir() {
                         <button className='submitTransferir'>Enviar</button>}
                         
                     </form>
-                    <Link  className='link' to='/home'>
+                    <Link  className='link' to='/'>
                         <button className='homeBtn' onClick={handleHomeClick}>Home</button>
                     </Link>
                 </div>
@@ -48,7 +48,7 @@ function Transferir() {
                         <button className='submitTransferir'>Enviar</button>}
                 </form>
                 <div className="cancelBox">
-                    <Link onClick={handleHomeClick} className='link' to='/home'>
+                    <Link onClick={handleHomeClick} className='link' to='/'>
                         <button className='cancelBtn' >Cancelar</button>
                     </Link>
                 </div>

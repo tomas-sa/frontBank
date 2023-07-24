@@ -77,7 +77,7 @@ export const AuthProvider = ({children}) => {
             setLoadingIcon(false)
             setUserATransferir('')
             notifySuccess()
-            navigate('/home')
+            navigate('/')
         }
         
         
@@ -99,7 +99,7 @@ export const AuthProvider = ({children}) => {
             setAuthTokens(data)
             setUser(jwt_decode(data.access))
             localStorage.setItem('authTokens', JSON.stringify(data))
-            navigate('/home')
+            navigate('/')
             setLoadingIcon(false)
         }else{
             notifyErrorLogin()

@@ -20,7 +20,7 @@ function Header() {
         {(Cbu && user ) && <p>CBU: {Cbu}</p>}
         </div>
         <div className="menuHeaderSecond">
-          <Link onClick={toggleMenu} className='link linkHome' to='/home'>Home</Link>
+          <Link onClick={toggleMenu} className='link linkHome' to='/'>Home</Link>
         {user ? (
           <p className='logoutBtn' onClick={logoutUser}>Logout</p>):(
           <Link className='link' to='/login'>Login</Link>
